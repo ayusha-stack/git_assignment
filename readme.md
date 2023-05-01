@@ -20,3 +20,16 @@ For example: We have the hash of the commit as 123acd. To revert this commit we 
 **6. Difference between revert and reset?**
 revert: revert undo the changes made by a previous commit and one can see both the original commit and the new revert commit in Git log. Useful for the case where one do not want to delete original commits but want to undo changes.
 reset: reset is used to undo changes to the repository, where commit history is changed. Reset is useful to undo changes and start over from the previous commit.
+
+**7. Write the difference between fetch and pill command?**
+fetch: This is the command which is used to retrieve the changes made in the remote repository without merging them into local repository. It updates the remote traching branches, but does not modify the local branches.
+
+pull: This is the command which retrieves new changes from the remote repository and merges them into the local branch.
+
+**8. How to handle merge conflicts?**
+General approach to handling merge conflicts are as follows:-
+>Pulling the changes from the remote repository.
+>Identifying the conflicting files
+>Resolving the conflicts manually and decide which changes to keep.
+> Adding the resolved conflicts and committing the changes and pushing the changes.
+
